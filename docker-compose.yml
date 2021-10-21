@@ -1,0 +1,42 @@
+version: '2.4'
+services:
+  keycloak:
+    container_name: keycloak
+    image: jboss/keycloak:latest
+    environment:
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: admin
+    volumes:
+    - ./imports:/opt/jboss/keycloak/imports
+    command:
+    - -b 0.0.0.0 -Dkeycloak.import=/opt/jboss/keycloak/imports/realm-export.json
+    ports:
+    - 8080:8080
+    networks:
+    - common-network
+    
+  mysql-db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=Passwd11
+      - MYSQL_DATABASE=moviesdb
+    ports:
+    - 3306:3306
+    networks:
+    - common-network
+    
+  movies-app-server:
+    container_name: keycloakrestapp
+    image: sahoobiswajit/keycloakrestapp:latest
+    ports:
+    - 9090:9090
+    networks:
+    - common-network
+    depends_on:
+    - keycloak
+    - mysql-db
+    
+networks:
+  common-network:
+    driver: bridge

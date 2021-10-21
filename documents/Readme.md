@@ -1,5 +1,3 @@
-# KeyCloakRestApp
-
 ## Directory Structure
 
 * The application follows the standard Spring boot directory structure.

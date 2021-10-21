@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "a07b7426-7d1f-48a7-9b91-743b99eb56f9",
+		"name": "MoviesApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/services/movies/finder/<Title>",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJWTU8xNEJIVEVjUHpvcHRocVZtUjV5STVIcExsWjJGWjAwcEF6TTI4MHYwIn0.eyJleHAiOjE2MzQ3NDUwMjMsImlhdCI6MTYzNDc0NDEyMywianRpIjoiNWEzNTI1ZDMtZWNkMy00M2M0LTg3MzYtNmRhYmVkMzlkZGYyIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgxL2F1dGgvcmVhbG1zL0JhY2tiYXNlIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6ImQ1YzMyZjUxLWEwY2QtNDYzYi04MjNjLTNiYzE4NTExM2I1OCIsInR5cCI6IkJlYXJlciIsImF6cCI6Im1vdmllcy1maW5kZXIiLCJzZXNzaW9uX3N0YXRlIjoiN2U2ZDZmZWUtODA2Ni00YjcyLTlhYWYtN2IyOTAyNzQxMGEwIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLWJhY2tiYXNlIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBzY29wZV9tb3ZpZXNfYXBwX2FjY2VzcyBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXIifQ.LdzFC6haHlmS9uAatZWAqUAGtQqohU_moWTSky3LzJi-yXJAAo7jk61Z6W7rcFm2brl815ox_ZyEXh-fBSG5j9fm8Sv6e_ba8cZARj7w3yzRvXmEHcDbhaWGQDeL3KlTrit6QFrQKxKO7BQyM9gKDSWVIAT8RQoEanhn3c7Z_WK2wC9BIlfiiOfp2u8Rp_QMy79V_DUckanz_rd-p4HyTZh-Hzl1Z8NC5guYgyL1rA4ztmfCPsdXrA52bUK2x_ZfddNC8FGAGOUxmo_kq-A81It-FIbgR4TtqGn1O08MHkXiNcOCekaFtktWcmXS20d_v3oPHX9e15zlLoBNwJWvgA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/services/movies/finder/Toy Story",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"services",
+						"movies",
+						"finder",
+						"Toy Story"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/services/movies/rating",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJSbC1CYk5iTFRLSmUtWkZkMDZwN2drRDJ2Q0x0OUx6YlgzaWdieVYxY0RjIn0.eyJleHAiOjE2MzQ3NzM0MDYsImlhdCI6MTYzNDc3MjUwNiwianRpIjoiN2JkZTA2ODUtMzg0OS00NWJmLWFmM2YtOTVlMDA1ZGMyMDMyIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2F1dGgvcmVhbG1zL0JhY2tiYXNlIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjBlMTE4MjFmLWFlNzktNDkxYS04NzU4LTkxNzFhMzg0OTZjYyIsInR5cCI6IkJlYXJlciIsImF6cCI6Im1vdmllcy1maW5kZXIiLCJzZXNzaW9uX3N0YXRlIjoiMjg4ZmRkYTItNzFmOC00YmNkLWI1MmQtOGNiYWZjYjY5MTRjIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLWJhY2tiYXNlIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBzY29wZV9tb3ZpZXNfYXBwX2FjY2VzcyBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoiam9obi5kb2UifQ.wYKsOfJDy695CGlDpQjvNTuM0SwH3mdH8lTGg009nADd0chY6XqodJPiQEEtq8uaB6rZdbjyn63OVh0sOTe_TBslb7EsN0V11AuRR8i23snLmFThqXyZiwXNMuGYTpO3qTb2OUSv3tdYUAl2SEFjAFItNi8oOw1hLRR8-E9T-xJAdmKQRsKY1slyUwFMzNtWO8gXcZTqIxQDr1YFOFebzOOHpEkZTmVoZzsftEO2Xv-lRjTNCTfzNbTAAUPe9ymKDFYNDenZTpYym295SsZNNCoXHRhKgofU2Bl7mBCD1B0WAzP9nLnKMA8Mpu4Ko0l10sVTbpvN4lMax4Eot5of9g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"imdbID\": \"tt0435761\",\r\n    \"rating\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/services/movies/rating",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"services",
+						"movies",
+						"rating"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get AccessToken",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "movies-finder",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "6434b9be-b546-4388-8abd-75bb033856d0",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "john.doe",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Passwd11",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/realms/Backbase/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"realms",
+						"Backbase",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
