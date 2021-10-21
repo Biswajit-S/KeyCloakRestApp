@@ -1,3 +1,9 @@
+## Update OMDB API Key in application.properties
+
+```
+keycloak.rest.app.omdb.api.key = <OMDB API KEY>
+```
+
 ## Build the jar file
 
 ```
